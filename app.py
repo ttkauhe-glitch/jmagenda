@@ -13,14 +13,12 @@ except KeyError:
     st.error("ERRO: Chave 'GEMINI_API_KEY' não encontrada nos Secrets.")
     st.stop()
 
-genai.configure(api_key=CHAVE_API)
-model = genai.GenerativeModel('gemini-1.5-flash')
 # ... (início do código permanece igual)
 
 genai.configure(api_key=CHAVE_API)
 
 # Mudamos para 'gemini-1.5-flash-latest' para garantir que o servidor encontre a versão certa
-model = genai.GenerativeModel('gemini-1.5-flash-latest')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 # ... (restante do código permanece igual)
 
