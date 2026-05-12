@@ -1,11 +1,3 @@
-# ... (início do código permanece igual)
-
-genai.configure(api_key=CHAVE_API)
-
-# Mudamos para 'gemini-1.5-flash-latest' para garantir que o servidor encontre a versão certa
-model = genai.GenerativeModel('gemini-1.5-flash-latest')
-
-# ... (restante do código permanece igual)
 import streamlit as st
 import google.generativeai as genai
 from fpdf import FPDF
@@ -23,6 +15,14 @@ except KeyError:
 
 genai.configure(api_key=CHAVE_API)
 model = genai.GenerativeModel('gemini-1.5-flash')
+# ... (início do código permanece igual)
+
+genai.configure(api_key=CHAVE_API)
+
+# Mudamos para 'gemini-1.5-flash-latest' para garantir que o servidor encontre a versão certa
+model = genai.GenerativeModel('gemini-1.5-flash-latest')
+
+# ... (restante do código permanece igual)
 
 # ==========================================
 # 2. DESIGN DA INTERFACE (STREAMLIT)
