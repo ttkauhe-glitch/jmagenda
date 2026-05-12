@@ -1,5 +1,6 @@
 import streamlit as st
 import google.generativeai as genai
+from google.generativeai.types import content_types
 from fpdf import FPDF
 from PIL import Image
 import io
